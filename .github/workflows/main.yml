@@ -24,3 +24,19 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+  
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pushes swagger.yaml file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: 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
+      with:
+        source_file: './docs/swagger/swagger.yaml'
+        destination_repo: 'MannaPlanet/demo4-api-guide'
+        destination_folder: './'
+        user_email: 'tech@mannaplanet.co.kr'
+        user_name: 'manna-github'        
+      
+      
