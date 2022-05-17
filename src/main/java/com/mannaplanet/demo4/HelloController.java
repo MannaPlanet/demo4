@@ -22,4 +22,9 @@ public class HelloController {
 	public String goodMorning() {
 		return "Good morning!";
 	}
+
+	@GetMapping("/api/goodNight")
+	public String goodNight() {
+		return "Good night!";
+	}
 }
