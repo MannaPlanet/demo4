@@ -18,8 +18,8 @@ public class HelloController {
 		return "Hi~ (2)";
 	}
 
-	// @GetMapping("/api/goodmorning")
-	// public String goodMorning() {
-	// 	return "Good morning!";
-	// }
+	@GetMapping("/api/goodmorning")
+	public String goodMorning() {
+		return "Good morning!";
+	}
 }
