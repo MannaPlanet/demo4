@@ -26,7 +26,7 @@ jobs:
     - name: Pushes swagger.yaml file
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
-        API_TOKEN_GITHUB: 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
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_file: './docs/swagger/swagger.yaml'
         destination_repo: 'MannaPlanet/demo4-api-guide'
