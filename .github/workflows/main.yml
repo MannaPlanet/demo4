@@ -30,7 +30,7 @@ jobs:
       with:
         source_file: './docs/swagger/swagger.yaml'
         destination_repo: 'MannaPlanet/demo4-api-guide'
-        destination_folder: './'
+        destination_folder: '/'
         user_email: 'tech@mannaplanet.co.kr'
         user_name: 'manna-github'        
       
